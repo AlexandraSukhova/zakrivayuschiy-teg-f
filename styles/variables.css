@@ -24,7 +24,7 @@
   --heart-transitin-delayed: fill .3s .05s linear;
 }
 
-@media (width < 375px){
+@media (width < 375px) {
   :root {
   --main-title-size: clamp(2.8125rem, 1.358rem + 7.2727vw, 3.0625rem);
   }

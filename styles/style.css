@@ -517,6 +517,6 @@
 @supports (font-variation-settings: normal) {
   .page {
     font-family: var(--main-font-family, Arial, Helvetica, sans-serif);
-    font-weight: var(--main-font-weight);
+    font-variation-settings: "wght" var(--main-font-weight);
   }
 }
