@@ -246,7 +246,6 @@
 .floppy-image {
   position: relative;
   z-index: 1;
-  color: var(--bg-color);
   mix-blend-mode: difference;
 }
 
@@ -294,6 +293,7 @@
   transition: box-shadow var(--smooth-transition);
   position: relative;
   overflow: hidden;
+  color: var(--button-content-color);
 }
 
 .border-button::after {
