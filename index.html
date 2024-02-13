@@ -360,13 +360,14 @@
           </span>
           Вставьте дискету, чтобы продолжить
         </h2>
-        <button
-          class="border-button pop-up__button"
-          type="submit"
-          onclick="window['dialog-id'].close();"
-          aria-controls="dialog-id">
+        <form method="dialog">
+          <button
+            class="border-button pop-up__button"
+            type="submit">
           <span class="button__text">Ок</span>
-        </button>
+          <span class="visually-hidden">Закрыть окно</span>
+          </button>
+        </form>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
