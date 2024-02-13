@@ -4,6 +4,7 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
 :root.theme-light {
   --bg-color: #f5f5f5;
   --bg-image:
@@ -11,18 +12,18 @@
             repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
             linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A);
   --main-color: #000;
-  --accent-font-family: PressStart2P, sans-serif;
-  --main-font-family: Inter, sans-serif;
+  --accent-font-family: 'PressStart2P', sans-serif;
+  --main-font-family: 'Inter-Variable', sans-serif;
   --accent-font-weight: 700;
   --main-font-weight: 400;
   --main-title-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
   --subtitle-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   --card-size: clamp(320px, 100%, 700px);
   --heart-conture-color: #000;
-  --heart-sparks-color: #ff0000;
+  --heart-sparks-color: #f00;
   --border: 2px solid var(--main-color);
   --heart-contour: #000;
-  --heart-color: #ff0000;
+  --heart-color: #f00;
   --heart-transition: fill .3s linear;
   --heart-transitin-delayed: fill .3s .05s linear;
 
@@ -43,18 +44,18 @@
             repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
             linear-gradient(to bottom, #007f0c 0.01%, #004306);
   --main-color: #00cc14;
-  --accent-font-family: PressStart2P, sans-serif;
-  --main-font-family: Inter, sans-serif;
+  --accent-font-family: 'PressStart2P', sans-serif;
+  --main-font-family: 'Inter-Variable', sans-serif;
   --accent-font-weight: 785;
   --main-font-weight: 465;
   --main-title-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
   --subtitle-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   --card-size: clamp(320px, 100%, 700px);
   --heart-conture-color: #00cc14;
-  --heart-sparks-color: #ff0000;
+  --heart-sparks-color: #f00;
   --border: 2px solid var(--main-color);
   --heart-contour: #00cc14;
-  --heart-color: #ff0000;
+  --heart-color: #f00;
   --heart-transition: fill .3s linear;
   --heart-transitin-delayed: fill .3s .05s linear;
 
@@ -77,18 +78,18 @@
               repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
               linear-gradient(to bottom, #007f0c 0.01%, #004306);
     --main-color: #00cc14;
-    --accent-font-family: PressStart2P, sans-serif;
-    --main-font-family: Inter, sans-serif;
-    --accent-font-weight: 700;
-    --main-font-weight: 400;
+    --accent-font-family: 'PressStart2P', sans-serif;
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --accent-font-weight: 785;
+    --main-font-weight: 465;
     --main-title-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
     --subtitle-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
     --card-size: clamp(320px, 100%, 700px);
     --heart-conture-color: #00cc14;
-    --heart-sparks-color: #ff0000;
+    --heart-sparks-color: #f00;
     --border: 2px solid var(--main-color);
     --heart-contour: #00cc14;
-    --heart-color: #ff0000;
+    --heart-color: #f00;
     --heart-transition: fill .3s linear;
     --heart-transitin-delayed: fill .3s .05s linear;
   }
@@ -99,6 +100,7 @@
   }
 
   @media (width < 375px) {
+
     :root {
     --main-title-size: clamp(2.8125rem, 1.358rem + 7.2727vw, 3.0625rem);
     }
