@@ -1,34 +1,31 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-
 :root {
-  --bg-color: #f5f5f5;
+  --bg-color: #fff;
   --bg-image:
             repeating-linear-gradient(to right, #d3d3d3 0 2px, transparent 2px 4px),
             repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
-            linear-gradient(to bottom, #E7E7E7 0.01%, #1A1A1A);
+            linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --main-color: #000;
-  --accent-font-family: 'PressStart2P', sans-serif;
-  --main-font-family: 'Inter-Variable', sans-serif;
+  --accent-font-family: 'PressStart2P', fantasy;
+  --main-font-family: 'Inter', sans-serif;
   --accent-font-family-size: 14px;
   --accent-font-weight: 700;
   --main-font-weight: 400;
-  --main-title-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
-  --subtitle-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
-  --card-size: clamp(320px, 100%, 700px);
-  --heart-conture-color: #000;
-  --heart-sparks-color: #f00;
+  --logo-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-title-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
+  --card-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
   --border: 2px solid var(--main-color);
   --smooth-transition: .3s ease;
   --heart-contour: #000;
   --heart-main-color: #f00;
   --heart-transition: fill .3s linear;
-  --heart-transitin-delayed: fill .3s .05s linear;
-  --button-content-color: #f5f5f5;
+  --heart-transition-delayed: fill .3s .05s linear;
+  --button-content-color: #fff;
 }
 
-@media (width < 375px) {
+@media (width <= 375px) {
 
   :root {
-  --main-title-size: clamp(2.8125rem, 1.358rem + 7.2727vw, 3.0625rem);
+  --card-size: 100%;
+  --logo-font-size: clamp(2.6875rem, 0.5057rem + 10.9091vw, 3.0625rem);
   }
 }

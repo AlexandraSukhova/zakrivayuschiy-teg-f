@@ -51,6 +51,11 @@ ol {
   list-style: none;
 }
 
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
 .visually-hidden {
   position: absolute;
   inline-size: 1px;
