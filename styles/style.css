@@ -78,13 +78,14 @@
 .theme-menu__button {
   display: grid;
   grid-template-columns: 16px auto;
-  column-gap: 5px;
+  column-gap: 5px; /* Убрать, если тумблер */
   position: relative;
   opacity: 1;
   transition: opacity var(--smooth-transition);
   transform-origin: left;
   font-size: var(--accent-font-family-size, 14px);
   text-transform: uppercase;
+  grid-column-start: -1;
 }
 
 .theme-menu__button::before {
@@ -93,7 +94,7 @@
   width: 100%;
   grid-column-start: 1;
   opacity: 0;
-}
+} /* Убрать, если тумблер */
 
 .theme-menu__button::after {
   content: '';
@@ -103,15 +104,62 @@
   right: 0;
   bottom: -3px;
   background: var(--main-color);
-  opacity: 1;
+  opacity: 0;
   transition: opacity var(--smooth-transition);
 }
+
+
+/* Тумблер 
+.theme-menu__item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(min-content, max-content));
+  gap: 10px;
+  justify-items: start;
+}
+
+.tumbler {
+  inline-size: 30px;
+  aspect-ratio: 2/1.3;
+  border: var(--border);
+  border-radius: 30%;
+  background: transparent;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.tumbler::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inline-size: 16px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  transform: translate(0);
+  background-color: var(--main-color);
+  border-radius: 30%;
+  border: 2px solid var(--bg-color);
+}
+
+.theme-menu__button:disabled ~ .tumbler::before {
+  transform: translate(60%);
+}
+
+.theme-menu__button:disabled ~ .tumbler {
+  opacity: .6;
+} */
 
 .theme-menu__button:hover,
 .theme-menu__button:focus,
 .theme-menu__button:focus-visible,
 .theme-menu__button:disabled {
   opacity: .6;
+}
+
+.theme-menu__button:hover::after {
+  opacity: 1;
 }
 
 .theme-menu__button:disabled {
@@ -406,6 +454,7 @@
   }
   
   .theme-menu__button::after {
+    opacity: 1;
     transform: scale(0);
     transform-origin: left;
     transition: transform var(--smooth-transition);

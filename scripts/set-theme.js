@@ -18,28 +18,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const root = document.documentElement;
   const themeButtons = document.querySelectorAll('.theme-menu__button');
 
-  function setDisabled(theme) {
-    themeButtons.forEach((item) => {
-      if (item.getAttribute('data-theme') === theme) {
-        item.setAttribute('disabled', true);
-      } else {
-        item.removeAttribute('disabled');
-      }
-    });
-  }
+  function setDisabled(theme) { 
 
-  if ([...root.classList].includes('theme-light')) {
-    setDisabled('light');
-  } else if ([...root.classList].includes('theme-dark')) {
-    setDisabled('dark');
-  } else {
-    setDisabled('auto');
-  }
+    themeButtons.forEach((item) => { 
+      if (item.getAttribute('data-theme') === theme) { 
+        item.setAttribute('disabled', true); 
+      } else { 
+        item.removeAttribute('disabled'); 
+      } 
+    }); 
+  } 
 
-  themeButtons.forEach((button) => {
-    button.onclick = () => {
-      changeTheme(button.getAttribute('data-theme'));
-      setDisabled(button.getAttribute('data-theme'));
-    };
-  });
-});
+  if ([...root.classList].includes('theme-light')) { 
+    setDisabled('light'); 
+  } else if ([...root.classList].includes('theme-dark')) { 
+    setDisabled('dark'); 
+  } else { 
+    setDisabled('auto'); 
+  } 
+
+  themeButtons.forEach((button) => { 
+    button.onclick = () => { 
+      changeTheme(button.getAttribute('data-theme')); 
+      setDisabled(button.getAttribute('data-theme')); 
+    }; 
+  }); 
+}); 
+
+
